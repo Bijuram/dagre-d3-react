@@ -29013,7 +29013,7 @@ var NODE_DEFAULT_ATTRS = {
 
 var EDGE_DEFAULT_ATTRS = {
   arrowhead: "normal",
-  curve: d3_1.curveLinear
+  curve: d3_1.curveBasis
 };
 
 function preProcessGraph(g) {
