@@ -34264,14 +34264,10 @@ var DagreGraph = /** @class */ (function (_super) {
         return _this;
     }
     DagreGraph.prototype.componentDidMount = function () {
-      let isChrome = !!window.chrome && !!window.chrome.webstore
-      if(isChrome) {//workaround for chrome issue
+        //workaround for chrome issue
         document.body.style.zoom = 1/window.devicePixelRatio;
-      }
         this._drawChart();
-      if(isChrome) {//workaround for chrome issue
         document.body.style.zoom = 1
-      }
     };
     DagreGraph.prototype.componentDidUpdate = function () {
         this._drawChart();
