@@ -34270,7 +34270,9 @@ var DagreGraph = /** @class */ (function (_super) {
         document.body.style.zoom = 1
     };
     DagreGraph.prototype.componentDidUpdate = function () {
+        document.body.style.zoom = 1/window.devicePixelRatio;
         this._drawChart();
+        document.body.style.zoom = 1
     };
     DagreGraph.prototype._getNodeData = function (id) {
         return this.props.nodes.find(function (node) { return node.id === id; });
